@@ -1,0 +1,61 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+.popup-container {
+	height: 100%;
+	position: relative;
+	background: grey;
+}
+
+.popup-sub-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20vw;
+	height: 40vh;
+	min-width: 100px;
+	min-height: 200px;
+}
+
+.popup-sub-container.hide-sub-container {
+	transform: translate(0%, 0%);
+	width: 100%;
+	height: 100%;
+}
+
+.popup.hide-popup {
+	display: none;
+}
+
+.animation.popup-sub-container,
+.animation.popup {
+	transition-duration: 0.8s;
+}
+
+.popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom:0;
+	right: 0;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	color: gold;
+	border:5px solid gold;
+	vertical-align: middle;
+}
+
+button {
+	padding: 15px 20px;
+}
