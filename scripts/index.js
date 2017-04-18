@@ -155,6 +155,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		}
 
 		narrowModel(prevSide) {
+
 			let angle = (prevSide !== undefined) ? prevSide : this.angle;
 			let {height, width} = this.block.parentNode.getBoundingClientRect();
 			this.flagAnimation = true;
